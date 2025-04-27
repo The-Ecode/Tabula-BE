@@ -1,0 +1,6 @@
+spring:
+  application:
+    name=Tabula_BE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/
