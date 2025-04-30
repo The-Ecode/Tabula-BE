@@ -15,10 +15,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Result {
     @Id
-    private Long id;
+    private String id;
 
-    @DBRef
-    private Space space;
+    private String spaceId;
 
     private String file;
 
