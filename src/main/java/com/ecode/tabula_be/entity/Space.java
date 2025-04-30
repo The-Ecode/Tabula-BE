@@ -4,11 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @Document("space")
@@ -17,19 +14,11 @@ import java.util.List;
 public class Space {
 
     @Id
-    private Long id;
+    private String id;
 
-    @DBRef
-    private Folder folder;
+    private String folderId;
 
-    @DBRef
-    private List<NoteType> noteType;
-
-    @DBRef
-    private List<Result> result;
-
-    @DBRef
-    private InputNote inputNote;
+    private String inputNoteId;
 
     private String spaceName;
 
