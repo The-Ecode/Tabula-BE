@@ -17,9 +17,6 @@ public class User {
     @Id
     private Long id;
 
-    @DBRef
-    private List<Folder> folder;
-
     private String userName;
 
     private Provider provider;
