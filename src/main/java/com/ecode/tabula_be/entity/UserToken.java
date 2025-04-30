@@ -16,10 +16,9 @@ import java.util.List;
 public class UserToken {
 
     @Id
-    private Long id;
+    private String id;
 
-    @DBRef
-    private List<User> user;
+    private String userId;
 
     private String refreshToken;
 }
