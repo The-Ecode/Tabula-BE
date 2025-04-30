@@ -15,13 +15,9 @@ import java.util.List;
 @NoArgsConstructor
 public class Folder {
     @Id
-    private Long id;
+    private String id;
 
-    @DBRef
     private User user;
-
-    @DBRef
-    private List<Folder> folder;
 
     private String folderName;
 
