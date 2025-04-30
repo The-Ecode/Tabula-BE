@@ -17,10 +17,7 @@ import java.util.List;
 public class Type {
 
     @Id
-    private Long id;
-
-    @DBRef
-    private List<NoteType> noteType;
+    private String id;
 
     private String langType;
 
