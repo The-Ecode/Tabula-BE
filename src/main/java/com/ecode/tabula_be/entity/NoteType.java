@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
@@ -15,13 +14,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class NoteType {
     @Id
-    private Long id;
+    private String id;
 
-    @DBRef
-    private Space space;
+    private String spaceId;
 
-    @DBRef
-    private Type type;
+    private String typeId;
 
     private LocalDateTime createdAt;
 
