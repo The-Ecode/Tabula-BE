@@ -14,10 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class InputNote {
 
     @Id
-    private Long id;
-
-    @DBRef
-    private Space space;
+    private String id;
 
     private String file; //pdf url
 }
