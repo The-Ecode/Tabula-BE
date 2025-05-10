@@ -1,6 +1,9 @@
 spring:
   application:
-    name=Tabula_BE
+    name: Tabula_BE
   data:
     mongodb:
-      uri: mongodb://localhost:27017/
+      uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}:${MONGO_PORT}/${MONGO_DB}
+#      auto-index-creation: true
+  config:
+    import: optional:file:.env[.properties]
