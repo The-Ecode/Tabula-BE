@@ -21,6 +21,10 @@ public class Space {
     private String inputNoteId;
 
     private String spaceName;
+    private String file;
+    private String fileDomain;
+    private String langType;
+    private String keyword;
 
     private LocalDateTime createdAt;
 
